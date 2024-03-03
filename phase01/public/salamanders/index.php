@@ -9,25 +9,8 @@
   ];
 ?>
 
-<?php  $page_title = 'Southern Appalachia Salamanders'; ?>
-
-<?php include('../../private/shared/salamander-header.php'); ?>
-
-<!-- 
-  Write a salamanders array with the following
-id=1, salamanderName = Red-Legged Salamander
-id=2, salamanderName = Pigeon Mountain Salamander
-id=3', salamanderName = ZigZag Salamander
-id=4,  salamanderName= Slimy Salamander 
--->
-
-
-
-
-
-<!-- Add the pageTitle for salamanders
-Include a shared path to the salamander header -->
-
+<?php  $page_title = 'Southern Appalachia Salamanders'; 
+ include('../../private/shared/salamander-header.php'); ?>
 
 <h1>Salamanders</h1>
 
@@ -51,9 +34,11 @@ Include a shared path to the salamander header -->
 
           <td><?php echo h($salamander['salamanderName']); ?></td>
 
-          <td><a href="<?php echo h(urlFor('edit.php?id=' . u($salamander['id']))); ?>">Edit</a></td>
+          <td><a href="<?php echo h(urlFor('salamanders/edit.php?id=' . u($salamander['id']))); ?>">Edit</a></td>
+
+          <td><a href="<?php echo h(urlFor('salamanders/show.php?id=' . u($salamander['id']))); ?>">View</a></td>
           
-          <td><a href="<?php echo h(urlFor('delete.php?id=' . u($salamander['id']))); ?>">Delete</a></td>
+          <td><a href="<?php echo h(urlFor('salamanders/delete.php?id=' . u($salamander['id']))); ?>">Delete</a></td>
     	  </tr>
       <?php } ?>
   	</table>
