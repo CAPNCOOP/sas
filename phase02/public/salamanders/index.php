@@ -9,12 +9,12 @@
   ];
 ?>
 
-<?php  $page_title = 'Southern Appalachia Salamanders'; 
+<?php  $pageTitle = 'Southern Appalachia Salamanders'; 
  include('../../private/shared/salamander-header.php'); ?>
 
 <h1>Salamanders</h1>
 
-  <a href="#">Create Salamander</a>
+  <a href="<?php echo urlFor('/salamanders/new.php')?>">Create Salamander</a>
 
 <table>
   <tr>
