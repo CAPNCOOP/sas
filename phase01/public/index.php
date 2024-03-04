@@ -1,6 +1,10 @@
 <?php 
   require_once('../private/initialize.php');
+<<<<<<< HEAD
   $pageTitle = 'SAS - Home';
+=======
+  $page_title = 'SAS - Home';
+>>>>>>> 9a4c3e3f0aa115b90b28b98282ae7d4c0f134a3e
   include('../private/shared/salamander-header.php');
   ?>
   
